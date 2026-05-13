@@ -1,0 +1,116 @@
+.splash-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-main);
+  position: relative;
+  overflow: hidden;
+}
+
+.splash-decor-top {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, var(--primary-light) 0%, transparent 70%);
+  opacity: 0.1;
+  filter: blur(40px);
+}
+
+.splash-decor-bottom {
+  position: absolute;
+  bottom: -150px;
+  right: -150px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, var(--secondary) 0%, transparent 70%);
+  opacity: 0.08;
+  filter: blur(60px);
+}
+
+.splash-content {
+  text-align: center;
+  z-index: 10;
+}
+
+.splash-logo-container {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 32px;
+  position: relative;
+  box-shadow: var(--shadow-xl);
+}
+
+.logo-emoji-premium {
+  font-size: 50px;
+  z-index: 2;
+}
+
+.logo-pulse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-xl);
+  border: 2px solid var(--primary);
+  opacity: 0;
+  animation: logoPulse 2s infinite;
+}
+
+@keyframes logoPulse {
+  0% { transform: scale(1); opacity: 0.5; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+.logo-title-premium {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.accent-text {
+  color: var(--primary);
+}
+
+.splash-tagline-premium {
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.splash-loading-indicator {
+  position: absolute;
+  bottom: 80px;
+  width: 140px;
+}
+
+.loading-bar {
+  height: 4px;
+  background: #E2E8F0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.loading-progress {
+  height: 100%;
+  width: 40%;
+  background: var(--primary);
+  border-radius: 10px;
+  animation: loadingSlide 2s infinite ease-in-out;
+}
+
+@keyframes loadingSlide {
+  0% { transform: translateX(-100%); width: 30%; }
+  50% { width: 50%; }
+  100% { transform: translateX(300%); width: 30%; }
+}

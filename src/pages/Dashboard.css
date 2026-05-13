@@ -1,0 +1,618 @@
+.dashboard-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-main);
+}
+
+.dashboard-header-premium {
+  padding: 40px 24px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  z-index: 10;
+}
+
+.scan-shortcut-btn {
+  background: var(--bg-main);
+  border: 1px solid #E2E8F0;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dashboard-scrollview {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.dashboard-earnings-section {
+  padding: 24px;
+  background: white;
+}
+
+.earnings-main-card {
+  padding: 24px;
+  border-radius: var(--radius-xl);
+  color: white;
+  margin-bottom: 20px;
+}
+
+.card-label {
+  font-size: 13px;
+  opacity: 0.9;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.revenue-main {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.revenue-footer {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.earnings-stats-row {
+  display: flex;
+  gap: 16px;
+}
+
+.mini-stat {
+  flex: 1;
+  background: white;
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+}
+
+.mini-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.mini-val {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.dashboard-content-main {
+  padding: 24px;
+}
+
+/* Owner Tools Grid */
+.owner-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.owner-tool-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 8px;
+  border-radius: 16px;
+  border: 1px solid #E2E8F0;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.owner-tool-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.owner-tool-btn.highlight {
+  background: linear-gradient(135deg, rgba(16,185,129,0.08), rgba(99,102,241,0.08));
+  border-color: rgba(16,185,129,0.3);
+}
+
+.tool-icon {
+  font-size: 24px;
+}
+
+.tool-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.section-header-premium {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.section-header-premium h2 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.btn-add-new-spot {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.btn-add-rental {
+  background: linear-gradient(135deg, #6366F1, #8B5CF6);
+}
+
+.parking-spots-list {
+  margin-bottom: 30px;
+}
+
+.parking-list-item {
+  background: white;
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 16px;
+}
+
+.spot-icon-box {
+  width: 44px;
+  height: 44px;
+  background: #F1F5F9;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.spot-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.spot-name {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text-main);
+}
+
+.spot-addr {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.spot-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.spot-occ {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.spot-price {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* ==============================
+   RENTAL SPACE CARDS - PREMIUM
+   ============================== */
+.rental-spaces-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.rental-card-premium {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #E2E8F0;
+  transition: all 0.3s ease;
+}
+
+.rental-card-premium:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+}
+
+/* Image Section */
+.rental-card-image-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.rental-card-hero-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.rental-card-hero-img:hover {
+  transform: scale(1.03);
+}
+
+.rental-card-no-image {
+  width: 100%;
+  height: 160px;
+  background: linear-gradient(135deg, #F1F5F9, #E2E8F0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #94A3B8;
+  font-size: 14px;
+}
+
+.rental-card-no-image span:first-child {
+  font-size: 36px;
+}
+
+/* Image Count Badge */
+.rental-card-image-count {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 4px 10px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Image Thumbnails */
+.rental-card-thumbs {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  background: rgba(0,0,0,0.03);
+}
+
+.rental-thumb-mini {
+  width: 56px;
+  height: 44px;
+  border-radius: 8px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  border: 2px solid transparent;
+}
+
+.rental-thumb-mini:hover {
+  opacity: 0.85;
+  border-color: var(--primary);
+}
+
+.rental-thumb-more {
+  width: 56px;
+  height: 44px;
+  border-radius: 8px;
+  background: #F1F5F9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+/* Price Badge */
+.rental-price-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 8px 14px;
+  background: linear-gradient(135deg, #10B981, #059669);
+  border-radius: 14px;
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  box-shadow: 0 4px 12px rgba(16,185,129,0.3);
+}
+
+.rental-price-badge span {
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+/* Availability Badge */
+.rental-avail-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  border: 1px solid;
+  backdrop-filter: blur(8px);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+/* Info Section */
+.rental-card-info {
+  padding: 16px 18px 18px;
+}
+
+.rental-card-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.rental-card-name {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.rental-card-addr {
+  font-size: 13px;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.rental-card-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.rental-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: #F8FAFC;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+.meta-icon {
+  font-size: 14px;
+}
+
+/* Amenity Tags */
+.rental-amenities-preview {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.amenity-tag {
+  padding: 3px 8px;
+  background: rgba(99,102,241,0.08);
+  color: #6366F1;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.amenity-tag.more {
+  background: #F1F5F9;
+  color: var(--text-muted);
+}
+
+/* Empty Rental Card */
+.empty-rental-card {
+  background: linear-gradient(135deg, rgba(99,102,241,0.04), rgba(16,185,129,0.04));
+  padding: 40px 24px;
+  border-radius: 20px;
+  text-align: center;
+  border: 2px dashed #CBD5E1;
+  margin-bottom: 24px;
+}
+
+.empty-rental-icon {
+  font-size: 52px;
+  margin-bottom: 16px;
+}
+
+.empty-rental-card h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.empty-rental-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 20px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-upload-first {
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #6366F1, #8B5CF6);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(99,102,241,0.25);
+  transition: all 0.25s ease;
+}
+
+.btn-upload-first:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(99,102,241,0.35);
+}
+
+/* Image Lightbox */
+.image-lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInLightbox 0.25s ease;
+  backdrop-filter: blur(8px);
+}
+
+@keyframes fadeInLightbox {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 80vh;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 16px;
+  object-fit: contain;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 10;
+  transition: transform 0.2s;
+}
+
+.lightbox-close:hover {
+  transform: scale(1.1);
+}
+
+/* Bookings */
+.view-all-link {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dash-booking-row {
+  display: flex;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #F1F5F9;
+  gap: 12px;
+}
+
+.dash-booking-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.db-name {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.db-time {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.db-status {
+  font-size: 10px;
+  font-weight: 800;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.db-price {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.empty-spots-card {
+  background: #F8FAFC;
+  padding: 30px;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  border: 1px dashed #CBD5E1;
+}
+
+.btn-empty-action {
+  background: none;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-top: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.no-bookings-dash {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 20px;
+  font-size: 14px;
+}

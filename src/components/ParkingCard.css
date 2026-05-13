@@ -1,0 +1,118 @@
+.parking-card-premium {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 12px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 16px;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.parking-card-premium:active {
+  transform: scale(0.97);
+  background: var(--bg-main);
+}
+
+.card-image-box {
+  width: 90px;
+  height: 90px;
+  background: var(--bg-main);
+  border-radius: var(--radius-md);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.price-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--primary);
+  color: white;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 0 0 8px 0;
+}
+
+.parking-icon {
+  font-size: 32px;
+}
+
+.card-info-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.card-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-name {
+  font-size: 16px;
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.card-rating {
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.card-rating .star {
+  color: #F59E0B;
+}
+
+.card-address-text {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 4px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slots-badge {
+  background: #ECFDF5;
+  color: var(--primary);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.slots-badge .dot {
+  width: 6px;
+  height: 6px;
+  background: var(--primary);
+  border-radius: 50%;
+}
+
+.distance-info {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+}

@@ -1,0 +1,252 @@
+.parking-details-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card);
+  position: relative;
+}
+
+.details-header-premium {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 40px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details-header-premium h1 {
+  font-size: 18px;
+  color: white;
+}
+
+.back-btn-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  color: var(--text-main);
+  border: none;
+}
+
+.share-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border: none;
+}
+
+.details-scrollview {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.details-hero {
+  height: 300px;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1590674899484-13da0d1b58f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-parking-label {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+
+.badge-available {
+  background: var(--primary);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.details-main-content {
+  padding: 24px;
+  background: white;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  margin-top: -30px;
+  position: relative;
+  min-height: 500px;
+}
+
+.details-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.details-name {
+  font-size: 24px;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.details-address {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.details-rating-box {
+  background: white;
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+}
+
+.star { color: #F59E0B; }
+
+.features-horizontal-scroll {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  margin-bottom: 30px;
+  padding-bottom: 4px;
+}
+
+.features-horizontal-scroll::-webkit-scrollbar { display: none; }
+
+.feature-chip {
+  background: var(--bg-main);
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 90px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.feature-icon { font-size: 20px; }
+
+.section-title {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.description-text {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.section-header-inline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.time-info {
+  background: #EEF2FF;
+  color: var(--secondary);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.time-grid-premium {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.time-chip {
+  background: var(--bg-main);
+  border: 2px solid transparent;
+  padding: 12px 8px;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.time-chip.selected {
+  border-color: var(--primary);
+  background: #ECFDF5;
+  color: var(--primary);
+}
+
+.time-chip.disabled {
+  opacity: 0.4;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+.error-message-small {
+  color: var(--error);
+  font-size: 12px;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.sticky-booking-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 24px 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  z-index: 101;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.price-summary {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.price-amount {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.btn-book-now {
+  padding: 14px 28px;
+  border-radius: var(--radius-md);
+  color: white;
+  font-weight: 800;
+  font-size: 16px;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+  border: none;
+  cursor: pointer;
+}

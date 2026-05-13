@@ -1,0 +1,175 @@
+.earnings-page {
+  padding: 20px;
+  background-color: var(--bg-primary);
+  min-height: 100vh;
+  color: var(--text-primary);
+}
+
+.earnings-summary {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, #1a1a1a 100%);
+  padding: 24px;
+  border-radius: 16px;
+  margin-top: 20px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.total-balance p {
+  color: var(--text-secondary);
+  margin: 0 0 8px 0;
+  font-size: 14px;
+}
+
+.total-balance h2 {
+  font-size: 32px;
+  margin: 0;
+  color: var(--accent-primary);
+}
+
+.withdraw-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--accent-primary);
+  color: #000;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.withdraw-btn:hover {
+  opacity: 0.9;
+}
+
+.stats-grid {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.stat-card {
+  background-color: var(--bg-secondary);
+  padding: 16px;
+  border-radius: 12px;
+  min-width: 140px;
+  flex: 1;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stat-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-info p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.stat-info h4 {
+  margin: 4px 0 0 0;
+  font-size: 18px;
+}
+
+.revenue-chart-placeholder {
+  margin-top: 24px;
+  background-color: var(--bg-secondary);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+}
+
+.revenue-chart-placeholder h3 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+}
+
+.chart-box {
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.bar {
+  flex: 1;
+  background-color: var(--accent-primary);
+  border-radius: 4px 4px 0 0;
+  opacity: 0.8;
+  transition: height 0.3s ease;
+}
+
+.bar:hover {
+  opacity: 1;
+}
+
+.chart-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.recent-payouts {
+  margin-top: 24px;
+}
+
+.recent-payouts h3 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+}
+
+.payout-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.payout-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.payout-date {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.payout-id {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.payout-amount {
+  font-weight: bold;
+  font-size: 16px;
+  color: #22c55e;
+}

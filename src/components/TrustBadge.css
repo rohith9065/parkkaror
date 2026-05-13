@@ -1,0 +1,47 @@
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.trust-high {
+  background: #E8F5E9;
+  color: #2E7D32;
+  border: 1px solid #A5D6A7;
+}
+
+.trust-medium {
+  background: #FFF8E1;
+  color: #F57F17;
+  border: 1px solid #FFE082;
+}
+
+.trust-low {
+  background: #FCE4EC;
+  color: #C2185B;
+  border: 1px solid #F48FB1;
+}
+
+.badge-icon {
+  font-size: 16px;
+}
+
+.badge-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.badge-label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.badge-score {
+  font-size: 11px;
+  opacity: 0.8;
+}

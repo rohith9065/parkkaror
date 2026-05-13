@@ -1,0 +1,165 @@
+.ticket-screen {
+  height: 100vh;
+  background: var(--bg-main);
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket-header-premium {
+  padding: 40px 24px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.back-btn-circle {
+  position: absolute;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  color: var(--text-main);
+  font-size: 18px;
+}
+
+.ticket-container {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ticket-card-premium {
+  background: white;
+  width: 100%;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket-top {
+  padding: 30px 24px;
+}
+
+.parking-badge {
+  background: #ECFDF5;
+  color: var(--primary);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.parking-name-large {
+  font-size: 24px;
+  margin-bottom: 4px;
+  color: var(--text-main);
+}
+
+.parking-address-small {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.ticket-divider {
+  display: flex;
+  align-items: center;
+  background: white;
+  height: 30px;
+}
+
+.divider-left, .divider-right {
+  width: 20px;
+  height: 20px;
+  background: var(--bg-main);
+  border-radius: 50%;
+}
+
+.divider-left { margin-left: -10px; }
+.divider-right { margin-right: -10px; }
+
+.divider-line {
+  flex: 1;
+  border-top: 2px dashed #E2E8F0;
+  margin: 0 10px;
+}
+
+.ticket-bottom {
+  padding: 0 24px 30px;
+}
+
+.ticket-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.grid-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #94A3B8;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.grid-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.qr-container-premium {
+  padding: 20px;
+  background: var(--bg-main);
+  border-radius: var(--radius-lg);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.entry-instructions {
+  text-align: center;
+}
+
+.entry-instructions p {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-main);
+}
+
+.help-text {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.btn-block {
+  width: 100%;
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-secondary {
+  background: var(--bg-card);
+  color: var(--text-main);
+  border: 1px solid #E2E8F0;
+}
